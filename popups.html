@@ -52,19 +52,24 @@
                 </li>
 
                 <li>
-                    <label class="main-photo-wrap">Главная фотография
-                        <input type="file" name="main-photo" placeholder="Выберите файл...">
-                    </label>
-                </li>
+                    <ul class="list-add-file">
+                        <li>
+                            <p>Главная фотография</p>
+                            <label class="main-photo-wrap">
+                                <span class="add-file-name">Выберите файл...</span>
+                                <input class="add-file" type="file" name="main-photo">
+                            </label>
+                            <p>(Размер фото 364 х 255 )</p>
+                        </li>
 
-                <li>
-                    <label class="additional-photo-wrap">Дополнительные фотографии
-                        <input type="file" name="additional-photo" placeholder="Выберите файл...">
-                    </label>
-                </li>
-
-                <li>
-                    <p>(Размер фото 364 х 255 )</p>
+                        <li>
+                            <p>Дополнительные фотографии</p>
+                            <label class="additional-photo-wrap">
+                                <span class="add-file-name">Выберите файл...</span>
+                                <input class="add-file" type="file" name="additional-photo">
+                            </label>
+                        </li>
+                    </ul>
                 </li>
 
                 <li>
@@ -74,7 +79,7 @@
                 </li>
             </ul>
 
-            <input class="btn-submit" type="submit" value="Отправить">
+            <input class="btn-submit btn" type="submit" value="Отправить">
         </form>
     </div>
 

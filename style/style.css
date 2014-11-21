@@ -515,6 +515,154 @@ a:hover                        { text-decoration:none; }
             padding: 0;
         }
 /*----------------------------------------------------------------------------------*/
+/*-------------------------------------POPUPS---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+    .free-ads-popup {
+        width: 485px;
+        height: 480px;
+        margin: 0 auto;
+    }
+        a.btn-ads {
+            display: inline-block;
+            width: 220px;
+            height: 27px;
+            margin: 0 10px;
+            text-align: center;
+            font-size: 14px;
+            line-height: 27px;
+            -webkit-border-radius: 5px 5px 0 0;
+            -moz-border-radius: 5px 5px 0 0;
+            border-radius: 5px 5px 0 0;
+        }
+        a.free-ads {
+            text-decoration: none;
+            color: #ffffff;
+            background: #1385C7;
+        }
+        a.paid-ads {
+            color: #1385C7;
+            background: #F6F6F6;
+        }
+        .free-ads-form {
+            width: 485px;
+            height: 430px;
+            padding-top: 10px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px ;
+            background: #1385C7;
+        }
+                .free-ads-form li {
+                    overflow: hidden;
+                    margin:0 0 10px 10px;
+                }
+                    .free-ads-form p {
+                        font-size: 12px;
+                        color: #ffffff;
+}
+                    .input-style {
+                        width: 445px;
+                        height: 28px;
+                        padding-left: 10px;
+                        padding-right: 10px;
+                        font-size: 14px;
+                        color: #2b2b2b;
+                        -webkit-border-radius: 5px;
+                        -moz-border-radius: 5px;
+                        border-radius: 5px ;
+                        border: none;
+                        background: #F6F6F6;
+                    }
+                    .name-wrap,
+                    .email-wrap,
+                    .tell-wrap {
+                        position: relative;
+                    }
+                    .name-wrap:before,
+                    .email-wrap:before,
+                    .tell-wrap:before {
+                        content: "";
+                        position: absolute;
+                        width: 7px;
+                        height: 7px;
+                        top: 9px;
+                        left: 2px;
+                        background-image: url("../images/content/star-wrap.png");
+                    }
+                    .select-section-wrap {
+                        position: relative;
+                        float: left;
+                    }
+                    .select-section {
+                        width: 465px;
+                        height: 28px;
+                        font-size: 14px;
+                        color: #2b2b2b;
+                        -webkit-border-radius: 5px;
+                        -moz-border-radius: 5px;
+                        border-radius: 5px ;
+                        border: none;
+                    }
+                    .select-section-wrap:after{
+                        content:"";
+                        text-align: center;
+                        line-height:32px;
+                        position: absolute;
+                        width: 28px;
+                        height: 28px;
+                        right: 0px;
+                        top: 0px;
+                        pointer-events: none;
+                        background-image: url("../images/content/select-wrap.png");
+                    }
+                    .list-add-file li {
+                        float: left;
+                        margin: 0 0 0 15px;
+                    }
+                    .list-add-file li:first-child {
+                        margin: 0;
+                    }
+                        .list-add-file p {
+                            margin: 0 0 10px 5px;
+                        }
+                            .add-file-name {
+                                display: inline-block;
+                                width: 205px;
+                                height: 28px;
+                                margin-bottom: 10px;
+                                padding-left: 10px;
+                                padding-right: 10px;
+                                font-size: 14px;
+                                line-height: 28px;
+                                color: #2b2b2b;
+                                -webkit-border-radius: 5px;
+                                -moz-border-radius: 5px;
+                                border-radius: 5px ;
+                                border: none;
+                                background:url("../images/content/add_photo.png") no-repeat right #F6F6F6 ;
+                            }
+                            .add-file {
+                                opacity: 0;
+                                display: none;
+                            }
+                    .description-wrap textarea {
+                        width: 445px;
+                        height:100px;
+                        padding: 10px;
+                        resize: none;
+                        font-size: 14px;
+                        color: #2b2b2b;
+                        -webkit-border-radius: 5px;
+                        -moz-border-radius: 5px;
+                        border-radius: 5px ;
+                        border: none;
+                        background: #F6F6F6;
+                    }
+                .btn-submit {
+                    float: right;
+                    margin: -5px 10px 0 0;
+                }
+/*----------------------------------------------------------------------------------*/
 /*-------------------------------------RESPONSIVE-----------------------------------*/
 /*----------------------------------------------------------------------------------*/
 @media screen and (min-width: 1920px) {
