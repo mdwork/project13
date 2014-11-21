@@ -4,8 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=1024, initial-scale=1, user-scalable=yes">
     <title>Маламуты</title>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css' />
-    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700,800&subset=latin,cyrillic' rel='stylesheet' type='text/css'>    <link rel="stylesheet" type="text/css" href="style/style.css" />
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 </head>
 
@@ -19,17 +18,17 @@
             </h1>
 
             <div class="box-contact">
-                <span class="letter">Написать нам</span>
-                <span class="question">Как это работает</span>
+                <a href="#" class="letter">Написать нам</a>
+                <a href="#" class="question">Как это работает</a>
                 <ul class="choose-language">
-                    <li><a href="#">Рус</a></li>
+                    <li class="active"><a href="#">Рус</a></li>
                     <li><a href="#">Укр</a></li>
                 </ul>
             </div><!--end BOX-CONTACT-->
 
             <nav class="wrap-nav">
                 <ul class='nav'>
-                    <li><a href='#'>Главная</a></li>
+                    <li class="active"><a href='#'>Главная</a></li>
                     <li><a href='#'>О собаке</a></li>
                     <li><a href='#'>Объявления</a></li>
                     <li><a href='#'>Статьи</a></li>
@@ -39,10 +38,89 @@
             </nav>
         </header>
     </div><!--end WRAP-header-->
-    <div class="content"></div>
+
+
+    <main>
+        <section class="wrap-video-block">
+            <div class="content">
+                <div class="wrap-video">
+                    <img src="images/content/video_img.jpg" alt="foto">
+                    <span class="icon-play">Play</span>
+                    <span class="icon-video">video</span>
+                </div>
+            </div>
+        </section><!--end WRAP-VIDEO-BLOCK-->
+
+        <section class="shot-info-dog">
+            <div class="content">
+                <img class="big-foto-dog" src="images/content/dog_woman.png" alt="foto">
+
+                <div class="description">
+                    <strong>Маламут - собаки одного из эскимосских племен, известного, как мэлмьюты.</strong>
+
+                    <p>Племя мэлмьютов населяло верхнюю часть реки Анвик в штате Аляска. В то время эти большие собаки
+                       использовались для перевозки грузов в экстремальных арктических условиях.</p>
+
+                    <ul class="list-type-circle">
+                        <li>Продажа щенков Маламута</li>
+                        <li>Вязка Маламутов</li>
+                        <li>Помощь в продаже щенков</li>
+                    </ul>
+
+                    <input type="button" class="btn" value="Написать нам">
+                </div><!--end DESCRIPTION-->
+            </div>
+        </section><!--end SHOT-INFO-DOG-->
+
+        <section class="content">
+            <div class="wrap-ads">
+                <header class="header-section">Объявления</header>
+
+                <ul class="list-ads">
+                    <li>
+                        <article>
+                            <span class="wrap-foto">
+                                <img src="images/content/foto_dog1.jpg" alt="">
+                            </span>
+
+                            <header>Щенки Фляскинского Маламута</header>
+                            <p>Маламут - собаки одного из эскимосских племен, известного, как мэлмьюты.</p>
+                            <a class="link-more-info" href="#">Подробнее</a>
+                        </article>
+                    </li>
+
+                    <li>
+                        <article>
+                            <span class="wrap-foto">
+                                <img src="images/content/foto_dog2.jpg" alt="">
+                            </span>
+
+                            <header>Щенки Фляскинского Маламута</header>
+                            <p>Маламут - собаки одного из эскимосских племен, известного, как мэлмьюты.</p>
+                            <a class="link-more-info" href="#">Подробнее</a>
+                        </article>
+                    </li>
+
+                    <li>
+                        <article>
+                            <span class="wrap-foto">
+                                <img src="images/content/foto_dog3.jpg" alt="">
+                            </span>
+
+                            <header>Щенки Фляскинского Маламута</header>
+                            <p>Маламут - собаки одного из эскимосских племен, известного, как мэлмьюты.</p>
+                            <a class="link-more-info" href="#">Подробнее</a>
+                        </article>
+                    </li>
+                </ul>
+            </div><!--end WRAP-LIST-ARTICLES-->
+
+            <div class="wrap-articles"></div>
+        </section><!--end CONTENT-->
+    </main>
     <div class="footer"></div>
 
-    <script src="js/jQuery 1.11.0.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/mainJs.js"></script>
 </body>
 </html>
