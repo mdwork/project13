@@ -992,6 +992,9 @@ main {
                 -moz-border-radius: 3px;
                 border-radius: 3px;
             }
+            .star-bg {
+                background: url("../images/content/star-wrap.png") 6px 8px #fff no-repeat;
+            }
             .form-footer .btn {
                 width: auto;
                 height: 38px;
