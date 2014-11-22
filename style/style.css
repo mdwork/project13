@@ -456,6 +456,18 @@ p {
                     margin-bottom: 0;
                     font-size: 13px;
                 }
+    .wrap-list-gallery {
+        width: 765px;
+    }
+        .list-gallery {
+            width: 820px;
+        }
+            .list-gallery li {
+                position: relative;
+                float: left;
+                width: 214px;
+                margin: 0 59px 25px 0;
+            }
 /*----------------------------------ADVERTISINGS------------------------------------*/
 .wrap-content {
     position: relative;
