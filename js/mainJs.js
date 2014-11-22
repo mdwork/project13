@@ -8,7 +8,8 @@ $(document).ready(function(){
                 fotoPopup = $('#wrap-popup');
 
             bgPopup.addClass('show_js');
-            fotoPopup.animate({'opacity': 1}, 500);
+            fotoPopup.prepend('<span class="icon-close_js"></span>')
+                .animate({'opacity': 1}, 500);
             showCurrentForm.addClass('show_js');
 
             bgPopup.height($(document).height());
@@ -17,26 +18,26 @@ $(document).ready(function(){
                 scrollTop = window.pageYOffset;
 
             fotoPopup.css({
-                'top': scrollTop,
                 'left': '50%',
                 'margin-left': - (fotoInPopupW / 2)
             });
 
-            $('.btn-close, #bg-popup').on('click', function() {
+            $('.icon-close_js, #bg-popup').on('click', function() {
                 bgPopup.removeClass('show_js');
+                $('.icon-close_js').remove();
+                $('.header-form-callback').remove();
                 showCurrentForm.removeClass('show_js');
 
                 $(showCurrentForm).find('.show_js').removeClass('show_js');
 
                 fotoPopup.css({
                     'opacity' : 0,
-                    'top': 0,
                     'left': 0,
                     'margin-left': 0
                 });
             });
 
-            $("#wrap-popup").click(function(e) {
+            $("#box-popup").click(function(e) {
                 e.stopPropagation();
             });
         });

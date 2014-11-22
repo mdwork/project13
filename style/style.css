@@ -891,12 +891,11 @@ a:hover                        { text-decoration:none; }
     content: 'X';
     display: inline-table;
     position: absolute;
-    top: 0;
+    top: -15px;
     right: -34px;
     width: 34px;
     height: 34px;
-    color: #fff;
-    background: #5E5F60;
+    color: #F98314;
     font: 24px verdana, sans-serif;
     text-align: center;
     cursor: pointer;
