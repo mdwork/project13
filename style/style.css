@@ -459,6 +459,9 @@ a:hover                        { text-decoration:none; }
                 width: 375px;
                 height: 200px;
                 margin-left: 15px;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                border-radius: 5px;
             }
             .content-header-cat li:first-child {
                 margin-left: 0;
@@ -466,6 +469,9 @@ a:hover                        { text-decoration:none; }
                 .content-header-cat img {
                     width: 100%;
                     height: 200px;
+                    -webkit-border-radius: 5px;
+                    -moz-border-radius: 5px;
+                    border-radius: 5px;
                 }
                 .content-header-cat h2 {
                     position: relative;
@@ -518,17 +524,127 @@ a:hover                        { text-decoration:none; }
                         .content-header-cat li:nth-child(even) h2 a span {
                             float: right;
                         }
-        .wrap-recomend-ads {
 
+        .wrap-recomend-ads {
+            margin-bottom: 20px;
         }
-                    .wrap-recomend-ads .wrap-foto {
+            .header-recomend-ads {
+                height: 31px;
+                padding: 0 10px;
+                margin-bottom: 20px;
+                background-color: #EC740A;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                border-radius: 5px;
+            }
+                .header-recomend-ads h2 {
+                    font-size: 18px;
+                    line-height: 29px;
+                    color: #ffffff;
+                }
+
+                .list-advertisings li {
+                    overflow: hidden;
+                    margin-bottom: 13px;
+                }
+                    .list-advertisings .wrap-foto {
                         float: left;
                         width: 214px;
-                        margin: 0 15px 0 3px;
+                        margin: 9px 15px 0 3px;
                     }
-            .list-recomend-ads {
+                    .list-advertisings .ads-content {
+                        overflow: hidden;
+                        margin-bottom: 11px;
+                    }
+                        .list-advertisings header {
+                            height: 30px;
+                            margin-bottom: 6px;
+                            border-bottom: 1px solid #DDDDDD;
+                        }
+                            .list-advertisings h3 a {
+                                font-weight: 700;
+                                font-size: 16px;
+                                text-decoration: none;
+                            }
+                            .list-advertisings h3 a:hover {
+                                color: #1d9be4;
+                                text-decoration: underline;
+                            }
+                            .list-advertisings .price {
+                                position: relative;
+                                display: block;
+                                float: right;
+                                width: 74px;
+                                background-color: #ECAF0A;
+                                -webkit-border-radius: 5px;
+                                -moz-border-radius: 5px;
+                                border-radius: 5px;
+                                font-size: 13px;
+                                line-height: 25px;
+                                color: #ffffff;
+                                text-align: center;
+                            }
+                            .list-advertisings .price:before {
+                                content: "";
+                                position: absolute;
+                                left: -4px;
+                                top: 10px;
+                                border-top: 3px solid transparent;
+                                border-right: 4px solid #ECAF0A;
+                                border-bottom: 3px solid transparent;
+                            }
+                                .price span {
+                                    font-weight: 700;
+                                }
+                        .ads-content p {
+                            margin-bottom: 3px;
+                            font-size: 13px;
+                            line-height: 18px;
+                            letter-spacing: 0.12px;
+                        }
+                        .share-box {
+                            overflow: hidden;
+                            text-align: right;
+                            font-size: 11px;
+                            color: #535353;
+                        }
+                            .share-box > ul {
+                                float: right;
+                                margin-left: 5px;
+                            }
+                                .share-box > ul > li {
+                                    float: left;
+                                    line-height: 24px;
+                                    margin-left: 12px;
+                                    display: table-cell;
+                                    vertical-align: middle;
+                                }
+                                .share-box > ul > li:first-child {
+                                    margin-left: 0;
+                                }
+                                    .share-box > ul > li img {
+                                        vertical-align: middle;
+                                    }
+                            .share-box span {
+                                vertical-align: middle;
+                            }
 
+        .wrap-all-ads {
+            margin-bottom: 26px;
+        }
+            .header-all-ads {
+                height: 31px;
+                padding: 0 10px;
+                margin-bottom: 20px;
+                background-color: #F2E5C3;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                border-radius: 5px;
             }
+                .header-all-ads h2 {
+                    font-size: 18px;
+                    line-height: 29px;
+                }
         .important-text {
             float: left;
             width: 440px;
@@ -867,8 +983,8 @@ a:hover                        { text-decoration:none; }
                         position: absolute;
                         width: 28px;
                         height: 28px;
-                        right: 0px;
-                        top: 0px;
+                        right: 0;
+                        top: 0;
                         pointer-events: none;
                         background-image: url("../images/content/select-wrap.png");
                     }
@@ -911,7 +1027,7 @@ a:hover                        { text-decoration:none; }
                         color: #2b2b2b;
                         -webkit-border-radius: 5px;
                         -moz-border-radius: 5px;
-                        border-radius: 5px ;
+                        border-radius: 5px;
                         border: none;
                         background: #F6F6F6;
                     }
@@ -959,6 +1075,51 @@ a:hover                        { text-decoration:none; }
             font-size: 13px;
             color: #1d9be4;
         }
+/*-----------------------------------PAGINATION-------------------------------------*/
+.pagination-box {
+    overflow: hidden;
+    display: table;
+    width: 100%;
+    margin-bottom: 20px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 13px;
+    color: #535353;
+}
+    .pagination-box span {
+        vertical-align: top;
+        line-height: 30px;
+    }
+    .pagination {
+        display: inline-block;
+    }
+        .pagination li {
+            float: left;
+            margin: 0 5px;
+        }
+            .pagination li a,
+            .pagination li span {
+                display: block;
+                width: 31px;
+                height: 31px;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                border-radius: 5px;
+                background-color: #F2E5C3;
+                text-decoration: none;
+                font-size: 16px;
+                line-height: 31px;
+                color: #535353;
+                -webkit-transition-duration: 0.2s;
+                -o-transition-duration: 0.2s;
+                -moz-transition-duration: 0.2s;
+                transition-duration: 0.2s;
+            }
+            .pagination li span,
+            .pagination li a:hover {
+                background-color: #1D9BE4;
+                color: #ffffff;
+            }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------RESPONSIVE-----------------------------------*/
 /*----------------------------------------------------------------------------------*/

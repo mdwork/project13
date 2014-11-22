@@ -30,9 +30,9 @@
 
             <nav class="wrap-nav">
                 <ul class='nav'>
-                    <li class="active"><a href='index.html'>Главная</a></li>
+                    <li><a href='index.html'>Главная</a></li>
                     <li><a href='#'>О собаке</a></li>
-                    <li><a href='advertisings.html'>Объявления</a></li>
+                    <li class="active"><a href='advertisings.html'>Объявления</a></li>
                     <li><a href='#'>Статьи</a></li>
                     <li><a href='#'>Галерея</a></li>
                     <li><a href='#'>Контакты</a></li>
@@ -41,7 +41,7 @@
         </header>
     </div><!--end WRAP-header-->
 
-    <section class="wrap-content">
+    <div class="wrap-content">
         <ul class="bread-crumbs">
             <li>
                 <a href="#">Главная</a>
@@ -49,14 +49,14 @@
             <li>
                 <span>Объявления</span>
             </li>
-        </ul>
+        </ul><!--end BREAD-CRUMBS-->
 
         <header>
             <h1>Объявления</h1>
         </header>
 
         <section class="sidebar">
-            <header>
+            <header class="header-sidebar">
                 <h4>Рубрики</h4>
             </header>
 
@@ -75,9 +75,9 @@
             <span class="plus">
                 <input type="button" class="btn popup-js" value="Подать объявление">
             </span>
-        </section>
+        </section><!--end SIDEBAR-->
 
-        <div class="content-advertisings">
+        <main class="content-with-sidebar">
             <ul class="content-header-cat">
                 <li>
                     <img src="images/content/cat_training.jpg" alt="foto" />
@@ -99,99 +99,121 @@
             </ul>
 
             <section class="wrap-recomend-ads">
-                <header>
+                <header class="header-recomend-ads">
                     <h2>Рекомендуемые объявления</h2>
                 </header>
 
-                <ul class="list-recomend-ads">
+                <ul class="list-advertisings">
                     <li>
                         <article>
                             <span class="wrap-foto">
-                                <img src="images/content/foto_dog1.jpg" alt="foto" />
+                                <img src="images/content/foto_dog3.jpg" alt="foto" />
                             </span>
 
-                            <header>
-                                <h3>
-                                    <a href="#">Вязка маламутов в Днепропетровске</a>
-                                </h3>
+                            <div class="ads-content">
+                                <header>
+                                    <span class="price">
+                                        <span>5 000</span> грн
+                                    </span>
 
-                                <span class="price">
-                                    <span>5 000</span> грн
-                                </span>
-                            </header>
+                                    <h3>
+                                        <a href="#">Вязка маламутов в Днепропетровске</a>
+                                    </h3>
+                                </header>
 
-                            <p>Питомник Cherkassu-Malamute предлагает вашему вниманию малышей Аляскинского маламута от племенной пары
-                                FILL CRIMEAN Khan( JCH. 2CAC. 2BOB) & Yashma OT Filippovoy (JCH. UCH) Дата рождения щенков 27. 10. 2014
-                                Питомник Cherkassu-Malamute предлагает вашему вниманию малышей
-                            </p>
+                                <p>Питомник Cherkassu-Malamute предлагает вашему вниманию малышей Аляскинского маламута от племенной пары
+                                    FILL CRIMEAN Khan( JCH. 2CAC. 2BOB) & Yashma OT Filippovoy (JCH. UCH) Дата рождения щенков 27. 10. 2014
+                                    Питомник Cherkassu-Malamute предлагает вашему вниманию малышей
+                                </p>
 
-                            <a class="link-more-info" href="#">Подробнее</a>
+                                <a class="link-more-info" href="#">Подробнее</a>
+                            </div>
 
                             <div class="share-box">
-                                <span>Поделиться с друзьями:</span>
                                 <ul>
                                     <li>
-                                        <img src="images/content/fb.png" alt="fb" />
+                                        <a href="#">
+                                            <img src="images/content/fb.png" alt="fb" />
+                                        </a>
                                     </li>
                                     <li>
-                                        <img src="images/content/vk.png" alt="vk" />
+                                        <a href="#">
+                                            <img src="images/content/vk.png" alt="vk" />
+                                        </a>
                                     </li>
                                     <li>
-                                        <img src="images/content/tw.png" alt="tw" />
+                                        <a href="#">
+                                            <img src="images/content/tw.png" alt="tw" />
+                                        </a>
                                     </li>
                                     <li>
-                                        <img src="images/content/gg.png" alt="gg" />
+                                        <a href="#">
+                                            <img src="images/content/gg.png" alt="gg" />
+                                        </a>
                                     </li>
                                 </ul>
+                                <span>Поделиться с друзьями:</span>
                             </div>
                         </article>
                     </li>
                 </ul>
+            </section>
 
-                <header>
+            <section class="wrap-all-ads">
+                <header class="header-all-ads">
                     <h2>Все объявления</h2>
                 </header>
 
-                <ul>
+                <ul class="list-advertisings">
                     <li>
                         <article>
                             <span class="wrap-foto">
-                                <img src="images/content/foto_dog1.jpg" alt="foto" />
+                                <img src="images/content/foto_dog4.jpg" alt="foto" />
                             </span>
 
-                            <header>
-                                <h3>
-                                    <a href="#">Вязка маламутов в Днепропетровске</a>
-                                </h3>
+                            <div class="ads-content">
+                                <header>
+                                    <span class="price">
+                                        <span>5 000</span> грн
+                                    </span>
 
-                                <span class="price">
-                                    <span>5 000</span> грн
-                                </span>
-                            </header>
+                                    <h3>
+                                        <a href="#">Вязка маламутов в Днепропетровске</a>
+                                    </h3>
+                                </header>
 
-                            <p>Питомник Cherkassu-Malamute предлагает вашему вниманию малышей Аляскинского маламута от племенной пары
-                                FILL CRIMEAN Khan( JCH. 2CAC. 2BOB) & Yashma OT Filippovoy (JCH. UCH) Дата рождения щенков 27. 10. 2014
-                                Питомник Cherkassu-Malamute предлагает вашему вниманию малышей
-                            </p>
+                                <p>Питомник Cherkassu-Malamute предлагает вашему вниманию малышей Аляскинского маламута от племенной пары
+                                    FILL CRIMEAN Khan( JCH. 2CAC. 2BOB) & Yashma OT Filippovoy (JCH. UCH) Дата рождения щенков 27. 10. 2014
+                                    Питомник Cherkassu-Malamute предлагает вашему вниманию малышей
+                                </p>
 
-                            <a class="link-more-info" href="#">Подробнее</a>
+                                <a class="link-more-info" href="#">Подробнее</a>
+                            </div>
 
                             <div class="share-box">
-                                <span>Поделиться с друзьями:</span>
                                 <ul>
                                     <li>
-                                        <img src="images/content/fb.png" alt="fb" />
+                                        <a href="#">
+                                            <img src="images/content/fb.png" alt="fb" />
+                                        </a>
                                     </li>
                                     <li>
-                                        <img src="images/content/vk.png" alt="vk" />
+                                        <a href="#">
+                                            <img src="images/content/vk.png" alt="vk" />
+                                        </a>
                                     </li>
                                     <li>
-                                        <img src="images/content/tw.png" alt="tw" />
+                                        <a href="#">
+                                            <img src="images/content/tw.png" alt="tw" />
+                                        </a>
                                     </li>
                                     <li>
-                                        <img src="images/content/gg.png" alt="gg" />
+                                        <a href="#">
+                                            <img src="images/content/gg.png" alt="gg" />
+                                        </a>
                                     </li>
                                 </ul>
+                                <span>Поделиться с друзьями:</span>
                             </div>
                         </article>
                     </li>
@@ -202,39 +224,49 @@
                                 <img src="images/content/foto_dog1.jpg" alt="foto" />
                             </span>
 
-                            <header>
-                                <h3>
-                                    <a href="#">Щенки Фляскинского маламута</a>
-                                </h3>
+                            <div class="ads-content">
+                                <header>
+                                    <span class="price">
+                                        <span>5 000</span> грн
+                                    </span>
 
-                                <span class="price">
-                                    <span>5 000</span> грн
-                                </span>
-                            </header>
+                                    <h3>
+                                        <a href="#">Щенки Фляскинского маламута</a>
+                                    </h3>
+                                </header>
 
-                            <p>Питомник Cherkassu-Malamute предлагает вашему вниманию малышей Аляскинского маламута от племенной пары
-                                FILL CRIMEAN Khan( JCH. 2CAC. 2BOB) & Yashma OT Filippovoy (JCH. UCH) Дата рождения щенков 27. 10. 2014
-                                Питомник Cherkassu-Malamute предлагает вашему вниманию малышей
-                            </p>
+                                <p>Питомник Cherkassu-Malamute предлагает вашему вниманию малышей Аляскинского маламута от племенной пары
+                                    FILL CRIMEAN Khan( JCH. 2CAC. 2BOB) & Yashma OT Filippovoy (JCH. UCH) Дата рождения щенков 27. 10. 2014
+                                    Питомник Cherkassu-Malamute предлагает вашему вниманию малышей
+                                </p>
 
-                            <a class="link-more-info" href="#">Подробнее</a>
+                                <a class="link-more-info" href="#">Подробнее</a>
+                            </div>
 
                             <div class="share-box">
-                                <span>Поделиться с друзьями:</span>
                                 <ul>
                                     <li>
-                                        <img src="images/content/fb.png" alt="fb" />
+                                        <a href="#">
+                                            <img src="images/content/fb.png" alt="fb" />
+                                        </a>
                                     </li>
                                     <li>
-                                        <img src="images/content/vk.png" alt="vk" />
+                                        <a href="#">
+                                            <img src="images/content/vk.png" alt="vk" />
+                                        </a>
                                     </li>
                                     <li>
-                                        <img src="images/content/tw.png" alt="tw" />
+                                        <a href="#">
+                                            <img src="images/content/tw.png" alt="tw" />
+                                        </a>
                                     </li>
                                     <li>
-                                        <img src="images/content/gg.png" alt="gg" />
+                                        <a href="#">
+                                            <img src="images/content/gg.png" alt="gg" />
+                                        </a>
                                     </li>
                                 </ul>
+                                <span>Поделиться с друзьями:</span>
                             </div>
                         </article>
                     </li>
@@ -242,42 +274,52 @@
                     <li>
                         <article>
                             <span class="wrap-foto">
-                                <img src="images/content/foto_dog1.jpg" alt="foto" />
+                                <img src="images/content/foto_dog2.jpg" alt="foto" />
                             </span>
 
-                            <header>
-                                <h3>
-                                    <a href="#">Продам щенков Маламута</a>
-                                </h3>
+                            <div class="ads-content">
+                                <header>
+                                    <span class="price">
+                                        <span>5 000</span> грн
+                                    </span>
 
-                                <span class="price">
-                                    <span>5 000</span> грн
-                                </span>
-                            </header>
+                                    <h3>
+                                        <a href="#">Продам щенков Маламута</a>
+                                    </h3>
+                                </header>
 
-                            <p>Питомник Cherkassu-Malamute предлагает вашему вниманию малышей Аляскинского маламута от племенной пары
-                                FILL CRIMEAN Khan( JCH. 2CAC. 2BOB) & Yashma OT Filippovoy (JCH. UCH) Дата рождения щенков 27. 10. 2014
-                                Питомник Cherkassu-Malamute предлагает вашему вниманию малышей
-                            </p>
+                                <p>Питомник Cherkassu-Malamute предлагает вашему вниманию малышей Аляскинского маламута от племенной пары
+                                    FILL CRIMEAN Khan( JCH. 2CAC. 2BOB) & Yashma OT Filippovoy (JCH. UCH) Дата рождения щенков 27. 10. 2014
+                                    Питомник Cherkassu-Malamute предлагает вашему вниманию малышей
+                                </p>
 
-                            <a class="link-more-info" href="#">Подробнее</a>
+                                <a class="link-more-info" href="#">Подробнее</a>
+                            </div>
 
                             <div class="share-box">
-                                <span>Поделиться с друзьями:</span>
                                 <ul>
                                     <li>
-                                        <img src="images/content/fb.png" alt="fb" />
+                                        <a href="#">
+                                            <img src="images/content/fb.png" alt="fb" />
+                                        </a>
                                     </li>
                                     <li>
-                                        <img src="images/content/vk.png" alt="vk" />
+                                        <a href="#">
+                                            <img src="images/content/vk.png" alt="vk" />
+                                        </a>
                                     </li>
                                     <li>
-                                        <img src="images/content/tw.png" alt="tw" />
+                                        <a href="#">
+                                            <img src="images/content/tw.png" alt="tw" />
+                                        </a>
                                     </li>
                                     <li>
-                                        <img src="images/content/gg.png" alt="gg" />
+                                        <a href="#">
+                                            <img src="images/content/gg.png" alt="gg" />
+                                        </a>
                                     </li>
                                 </ul>
+                                <span>Поделиться с друзьями:</span>
                             </div>
                         </article>
                     </li>
@@ -285,42 +327,52 @@
                     <li>
                         <article>
                             <span class="wrap-foto">
-                                <img src="images/content/foto_dog1.jpg" alt="foto" />
+                                <img src="images/content/foto_dog3.jpg" alt="foto" />
                             </span>
 
-                            <header>
-                                <h3>
-                                    <a href="#">Вязка маламутов в Днепропетровске</a>
-                                </h3>
+                            <div class="ads-content">
+                                <header>
+                                    <span class="price">
+                                        <span>5 000</span> грн
+                                    </span>
 
-                                <span class="price">
-                                    <span>5 000</span> грн
-                                </span>
-                            </header>
+                                    <h3>
+                                        <a href="#">Вязка маламутов в Днепропетровске</a>
+                                    </h3>
+                                </header>
 
-                            <p>Питомник Cherkassu-Malamute предлагает вашему вниманию малышей Аляскинского маламута от племенной пары
-                                FILL CRIMEAN Khan( JCH. 2CAC. 2BOB) & Yashma OT Filippovoy (JCH. UCH) Дата рождения щенков 27. 10. 2014
-                                Питомник Cherkassu-Malamute предлагает вашему вниманию малышей
-                            </p>
+                                <p>Питомник Cherkassu-Malamute предлагает вашему вниманию малышей Аляскинского маламута от племенной пары
+                                    FILL CRIMEAN Khan( JCH. 2CAC. 2BOB) & Yashma OT Filippovoy (JCH. UCH) Дата рождения щенков 27. 10. 2014
+                                    Питомник Cherkassu-Malamute предлагает вашему вниманию малышей
+                                </p>
 
-                            <a class="link-more-info" href="#">Подробнее</a>
+                                <a class="link-more-info" href="#">Подробнее</a>
+                            </div>
 
                             <div class="share-box">
-                                <span>Поделиться с друзьями:</span>
                                 <ul>
                                     <li>
-                                        <img src="images/content/fb.png" alt="fb" />
+                                        <a href="#">
+                                            <img src="images/content/fb.png" alt="fb" />
+                                        </a>
                                     </li>
                                     <li>
-                                        <img src="images/content/vk.png" alt="vk" />
+                                        <a href="#">
+                                            <img src="images/content/vk.png" alt="vk" />
+                                        </a>
                                     </li>
                                     <li>
-                                        <img src="images/content/tw.png" alt="tw" />
+                                        <a href="#">
+                                            <img src="images/content/tw.png" alt="tw" />
+                                        </a>
                                     </li>
                                     <li>
-                                        <img src="images/content/gg.png" alt="gg" />
+                                        <a href="#">
+                                            <img src="images/content/gg.png" alt="gg" />
+                                        </a>
                                     </li>
                                 </ul>
+                                <span>Поделиться с друзьями:</span>
                             </div>
                         </article>
                     </li>
@@ -329,10 +381,9 @@
 
             <div class="pagination-box">
                 <span>Страницы:</span>
-
                 <ul class="pagination">
-                    <li>
-                        <a href="#">1</a>
+                    <li class="active">
+                        <span>1</span>
                     </li>
                     <li>
                         <a href="#">2</a>
@@ -342,113 +393,113 @@
                     </li>
                 </ul>
             </div>
-        </div>
-    </section>
+        </main>
+    </div>
 </div><!--end WRAPPER-->
 
-    <div class="wrap-footer">
-        <footer class="content">
-            <div class="wrap-form-footer">
-                <span class="overview"></span>
-                <header class="header-section">Написать нам</header>
+<div class="wrap-footer">
+    <footer class="content">
+        <div class="wrap-form-footer">
+            <span class="overview"></span>
+            <header class="header-section">Написать нам</header>
 
-                <form class="form-footer" action="#" method="post">
-                    <input type="text" placeholder="Ваше имя">
-                    <input type="text" placeholder="E-mail">
-                    <textarea placeholder="Сообщение"></textarea>
+            <form class="form-footer" action="#" method="post">
+                <input type="text" placeholder="Ваше имя">
+                <input type="text" placeholder="E-mail">
+                <textarea placeholder="Сообщение"></textarea>
 
-                    <input type="button" class="btn" value="Отправить">
-                </form>
-            </div><!--end WRAP-FORM-FOOTER-->
+                <input type="button" class="btn" value="Отправить">
+            </form>
+        </div><!--end WRAP-FORM-FOOTER-->
 
-            <div class="box-contact-footer">
-                <header class="header-section">Наши контакты</header>
-                <img src="images/footer/contact_footer.png" alt="contact">
-            </div>
-        </footer>
-    </div><!--end WRAP-FOOTER-->
+        <div class="box-contact-footer">
+            <header class="header-section">Наши контакты</header>
+            <img src="images/footer/contact_footer.png" alt="contact">
+        </div>
+    </footer>
+</div><!--end WRAP-FOOTER-->
 
-    <!--POPUP-->
-    <div id="bg-popup">
-        <div class="ovefview"></div>
-        <div id="wrap-popup">
-            <div class="free-ads-popup">
-                <a class="free-ads btn-ads" href="#">Бесплатное объявление</a>
-                <a class="paid-ads btn-ads" href="#">Платное объявление</a>
+<!--POPUP-->
+<div id="bg-popup">
+    <div class="ovefview"></div>
+    <div id="wrap-popup">
+        <div class="free-ads-popup">
+            <a class="free-ads btn-ads" href="#">Бесплатное объявление</a>
+            <a class="paid-ads btn-ads" href="#">Платное объявление</a>
 
-                <form class="free-ads-form" name="reg" method="get">
+            <form class="free-ads-form" name="reg" method="get">
 
-                    <ul class="clear">
-                        <li>
-                            <label class="name-wrap">
-                                <input class="input-style" type="text" name="name" placeholder="Ваше имя">
-                            </label>
-                        </li>
+                <ul class="clear">
+                    <li>
+                        <label class="name-wrap">
+                            <input class="input-style" type="text" name="name" placeholder="Ваше имя">
+                        </label>
+                    </li>
 
-                        <li>
-                            <label class="email-wrap">
-                                <input class="input-style" type="email" name="email" placeholder="E-mail">
-                            </label>
-                        </li>
+                    <li>
+                        <label class="email-wrap">
+                            <input class="input-style" type="email" name="email" placeholder="E-mail">
+                        </label>
+                    </li>
 
-                        <li>
-                            <label class="tell-wrap">
-                                <input class="input-style" type="tell" name="tell" placeholder="Телефон">
-                            </label>
-                        </li>
+                    <li>
+                        <label class="tell-wrap">
+                            <input class="input-style" type="tell" name="tell" placeholder="Телефон">
+                        </label>
+                    </li>
 
-                        <li>
-                            <label class="price-wrap">
-                                <input class="input-style" type="text" name="price" placeholder="Цена">
-                            </label>
-                        </li>
+                    <li>
+                        <label class="price-wrap">
+                            <input class="input-style" type="text" name="price" placeholder="Цена">
+                        </label>
+                    </li>
 
-                        <li>
-                            <label class="select-section-wrap">
-                                <select class="select-section">
-                                    <option value="0">Выберите раздел</option>
-                                    <option value="1">Раздел 1</option>
-                                    <option value="2">Раздел 2</option>
-                                    <option value="3">Раздел 3</option>
-                                </select>
-                            </label>
-                        </li>
+                    <li>
+                        <label class="select-section-wrap">
+                            <select class="select-section">
+                                <option value="0">Выберите раздел</option>
+                                <option value="1">Раздел 1</option>
+                                <option value="2">Раздел 2</option>
+                                <option value="3">Раздел 3</option>
+                            </select>
+                        </label>
+                    </li>
 
-                        <li>
-                            <ul class="list-add-file">
-                                <li>
-                                    <p>Главная фотография</p>
-                                    <label class="main-photo-wrap">
-                                        <span class="add-file-name">Выберите файл...</span>
-                                        <input class="add-file" type="file" name="main-photo">
-                                    </label>
-                                    <p>(Размер фото 364 х 255 )</p>
-                                </li>
+                    <li>
+                        <ul class="list-add-file">
+                            <li>
+                                <p>Главная фотография</p>
+                                <label class="main-photo-wrap">
+                                    <span class="add-file-name">Выберите файл...</span>
+                                    <input class="add-file" type="file" name="main-photo">
+                                </label>
+                                <p>(Размер фото 364 х 255 )</p>
+                            </li>
 
-                                <li>
-                                    <p>Дополнительные фотографии</p>
-                                    <label class="additional-photo-wrap">
-                                        <span class="add-file-name">Выберите файл...</span>
-                                        <input class="add-file" type="file" name="additional-photo">
-                                    </label>
-                                </li>
-                            </ul>
-                        </li>
+                            <li>
+                                <p>Дополнительные фотографии</p>
+                                <label class="additional-photo-wrap">
+                                    <span class="add-file-name">Выберите файл...</span>
+                                    <input class="add-file" type="file" name="additional-photo">
+                                </label>
+                            </li>
+                        </ul>
+                    </li>
 
-                        <li>
-                            <label class="description-wrap">
-                                <textarea class="des-style" name="description" placeholder="Описание"></textarea>
-                            </label>
-                        </li>
-                    </ul>
+                    <li>
+                        <label class="description-wrap">
+                            <textarea class="des-style" name="description" placeholder="Описание"></textarea>
+                        </label>
+                    </li>
+                </ul>
 
-                    <input class="btn-submit btn" type="submit" value="Отправить">
-                </form>
-            </div>
+                <input class="btn-submit btn" type="submit" value="Отправить">
+            </form>
         </div>
     </div>
+</div>
 
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/mainJs.js"></script>
 </body>
 </html>
