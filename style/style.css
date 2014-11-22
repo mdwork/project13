@@ -423,9 +423,7 @@ a:hover                        { text-decoration:none; }
                 .list-article p {
                     font-size: 13px;
                 }
-/*----------------------------------------------------------------------------------*/
 /*----------------------------------ADVERTISINGS------------------------------------*/
-/*----------------------------------------------------------------------------------*/
 .wrap-content {
     width: 980px;
     margin: 0 auto;
@@ -509,6 +507,17 @@ a:hover                        { text-decoration:none; }
                         .content-header-cat li:nth-child(even) h2 a span {
                             float: right;
                         }
+        .wrap-recomend-ads {
+
+        }
+                    .wrap-recomend-ads .wrap-foto {
+                        float: left;
+                        width: 214px;
+                        margin: 0 15px 0 3px;
+                    }
+            .list-recomend-ads {
+
+            }
 /*----------------------------------------------------------------------------------*/
 /*------------------------------------SIDEBAR---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -553,13 +562,18 @@ a:hover                        { text-decoration:none; }
         font-size: 14px;
     }
     .sidebar .plus {
-        float: right;
+        display: inline-block;
         position: relative;
-        top: -34px;
-        right: 15px;
         font-size: 24px;
         color: #ffffff;
     }
+        .sidebar .plus:after {
+            content: '+';
+            display: block;
+            position: absolute;
+            right: 10px;
+            top: 4px;
+        }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -849,3 +863,47 @@ a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------OTHER----------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+#bg-popup {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+#wrap-popup {
+    position: absolute;
+    opacity: 0;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+#bg-popup .ovefview {
+    position: fixed;
+    background: #000;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+
+}
+.icon-close_js:after {
+    content: 'X';
+    display: inline-table;
+    position: absolute;
+    top: 0;
+    right: -34px;
+    width: 34px;
+    height: 34px;
+    color: #fff;
+    background: #5E5F60;
+    font: 24px verdana, sans-serif;
+    text-align: center;
+    cursor: pointer;
+}
+.show_js > ul, .show_js {
+    display: block !important;
+}
+#wrap-popup {
+    margin-top: 150px;
+}
