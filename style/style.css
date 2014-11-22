@@ -536,7 +536,7 @@ a:hover                        { text-decoration:none; }
     float: left;
     width: 200px;
 }
-    .sidebar header {
+    .header-sidebar {
         height: 31px;
         padding-left: 10px;
         background-color: #1D9BE4;
@@ -544,9 +544,10 @@ a:hover                        { text-decoration:none; }
         -moz-border-radius: 5px;
         border-radius: 5px;
         font-size: 18px;
+        font-weight: 600;
         color: #ffffff;
     }
-        .sidebar h4 {
+        .header-sidebar h4 {
             line-height: 30px;
         }
 
@@ -585,6 +586,53 @@ a:hover                        { text-decoration:none; }
             right: 10px;
             top: 4px;
         }
+    .private-ads {}
+        .header-grey {
+            padding: 5px 0;
+            margin-bottom: 5px;
+            color: #1d9be4;
+            font-size: 16px;
+            font-weight: 600;
+            text-align: center;
+            background: #EDEDED;
+
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+        }
+        .list-private-ads {}
+            .list-private-ads li {
+                position: relative;
+                margin-bottom: 12px;
+
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                border-radius: 5px;
+            }
+                .list-private-ads li a {
+                    display: block;
+                }
+                    .list-private-ads li img {
+                        display: block;
+                        width: 200px;
+                        height: 107px;
+                    }
+                    .list-private-ads li header {
+                        position: absolute;
+                        bottom: 15px;
+                        left: 3px;
+                        width: 194px;
+                        padding: 2px 0;
+                        text-align: center;
+                        color: #fff;
+                        background: #1D9BE4;
+                        font-size: 14px;
+                        font-weight: 600;
+
+                        -webkit-border-radius: 3px;
+                        -moz-border-radius: 3px;
+                        border-radius: 3px;
+                    }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -916,4 +964,7 @@ a:hover                        { text-decoration:none; }
 }
 #wrap-popup {
     margin-top: 150px;
+}
+.list-private-ads header.bg-orange {
+    background: #EC740A;
 }
