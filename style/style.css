@@ -371,9 +371,16 @@ a:hover                        { text-decoration:none; }
                     }
                 .header-article {
                     margin-bottom: 8px;
-                    font-size: 16px;
-                    font-weight: 600;
                 }
+                    .header-article a {
+                        text-decoration: none;
+                        font-size: 16px;
+                        font-weight: 600;
+                    }
+                    .header-article a:hover {
+                        text-decoration: underline;
+                        color: #1d9be4;
+                    }
                 .border {
                     padding-bottom: 12px;
                     border-bottom: 1px solid #ddd;
@@ -442,9 +449,9 @@ a:hover                        { text-decoration:none; }
     margin: 0 auto;
 }
     .wrap-content h1 {
-        margin: 0 0 8px 10px;
+        margin: 0 0 22px 10px;
         font-size: 24px;
-        line-height: 44px;
+        line-height: 16px;
     }
 
     .content-with-sidebar {
@@ -698,6 +705,18 @@ a:hover                        { text-decoration:none; }
                     .menu-page-list li a:hover {
                         border: none;
                     }
+/*--------------------------------ADVERTISING-PAGE----------------------------------*/
+.prev-page {
+    display: block;
+    float: right;
+    width: 31px;
+    height: 21px;
+    margin-top: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: url("../images/content/prev-page.png") no-repeat center #1C9AE3;
+}
 /*----------------------------------------------------------------------------------*/
 /*------------------------------------SIDEBAR---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -1040,7 +1059,7 @@ a:hover                        { text-decoration:none; }
 /*----------------------------------BREAD-CRUMBS------------------------------------*/
 .bread-crumbs {
     overflow: hidden;
-    padding-top: 7px;
+    padding: 7px 0 14px;
 }
     .bread-crumbs li {
         position: relative;
