@@ -38,6 +38,12 @@ a:hover                        { text-decoration:none; }
 .clear                         { clear:both; }
 .clearfix:after                { content: ""; display: block; clear: both; visibility: hidden;}
 .clearfix                      { display: inline-block; width: 100% }
+
+p {
+    margin-bottom: 15px;
+    font-size: 13px;
+    color: #2b2b2b;
+}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------WRAPPER--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -266,6 +272,7 @@ a:hover                        { text-decoration:none; }
         }
         .description p {
             margin-bottom: 10px;
+            color: #fff;
         }
         .list-type-circle {
             margin: 0 0 18px 18px;
@@ -295,6 +302,9 @@ a:hover                        { text-decoration:none; }
     .wrap-ads {
         float: left;
         width: 675px;
+    }
+    .wrap-ads-full-width {
+        margin-bottom: 35px;
     }
         .header-section,
         .header-section-blue,
@@ -335,6 +345,9 @@ a:hover                        { text-decoration:none; }
                 float: left;
                 width: 214px;
                 margin-left: 15px;
+            }
+            .wrap-ads-full-width .list-ads li {
+                margin-left: 40px;
             }
             .list-ads li:first-child {
                 margin-left: 3px;
@@ -440,10 +453,12 @@ a:hover                        { text-decoration:none; }
                     font-size: 12px;
                 }
                 .list-article p {
+                    margin-bottom: 0;
                     font-size: 13px;
                 }
 /*----------------------------------ADVERTISINGS------------------------------------*/
 .wrap-content {
+    position: relative;
     overflow: hidden;
     width: 980px;
     margin: 0 auto;
@@ -456,7 +471,7 @@ a:hover                        { text-decoration:none; }
 
     .content-with-sidebar {
         overflow: hidden;
-        padding-left: 15px;
+        padding: 0 0 35px 15px;
     }
         .content-header-cat {
             overflow: hidden;
@@ -657,10 +672,14 @@ a:hover                        { text-decoration:none; }
         .important-text {
             float: left;
             width: 440px;
+            margin-bottom: 35px;
             font-size: 15px;
             color: #2b2b2b;
         }
         .menu-page {
+            position: absolute;
+            right: 0;
+            top: 45px;
             float: right;
         }
             .menu-page header {
@@ -717,6 +736,57 @@ a:hover                        { text-decoration:none; }
     border-radius: 3px;
     background: url("../images/content/prev-page.png") no-repeat center #1C9AE3;
 }
+        .main {}
+            .main p {
+                line-height: 1.4;
+            }
+            .main-foto {
+                float: left;
+                width: 304px;
+                height: 228px;
+                margin: 0 13px 10px 0;
+            }
+            .wrap-characteristics-dog {
+                overflow: hidden;
+                margin: 25px 0 65px;
+            }
+                .wrap-characteristics-dog img {
+                    float: left;
+                    margin: 15px 0 0 35px;
+                }
+                .wrap-list-characteristics {
+                    float: right;
+                    width: 365px;
+                }
+                    .wrap-list-characteristics header {
+                        margin-bottom: 5px;
+                        padding-bottom: 5px;
+                        font-size: 17px;
+                        font-weight: bold;
+                        color: #2b2b2b;
+                        border-bottom: 1px solid #ddd;
+                    }
+                    .list-characteristics {}
+                        .list-characteristics > li {
+                            overflow: hidden;
+                            margin-bottom: 6px;
+                        }
+                            .name-characteristic {
+                                color: #1d9be4;
+                                font-size: 13px;
+                                font-weight: bold;
+                            }
+                            .list-stars {
+                                float: right;
+                            }
+                                .list-stars li {
+                                    float: right;
+                                    width: 15px;
+                                    height: 15px;
+                                    margin-left: 8px;
+                                    background: url("../images/content/star.png") no-repeat;
+                                    text-indent: -9999px;
+                                }
 /*----------------------------------------------------------------------------------*/
 /*------------------------------------SIDEBAR---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
