@@ -366,6 +366,8 @@ a:hover                        { text-decoration:none; }
                         position: relative;
                         z-index: 4;
                         display: block;
+                        height: 148px;
+                        width: 211px;
                     }
                 .header-article {
                     margin-bottom: 8px;
