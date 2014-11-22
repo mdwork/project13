@@ -37,7 +37,7 @@ $(document).ready(function(){
                 });
             });
 
-            $("#box-popup").click(function(e) {
+            $("#wrap-popup").click(function(e) {
                 e.stopPropagation();
             });
         });
