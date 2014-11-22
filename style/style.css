@@ -41,6 +41,16 @@ a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------WRAPPER--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+.wrapper {
+    min-height: 100%;
+}
+    .wrapper:after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 283px;
+        margin-bottom: -283px;
+    }
 .content {
     position: relative;
     width: 1000px;
@@ -425,6 +435,7 @@ a:hover                        { text-decoration:none; }
                 }
 /*----------------------------------ADVERTISINGS------------------------------------*/
 .wrap-content {
+    overflow: hidden;
     width: 980px;
     margin: 0 auto;
 }
@@ -434,7 +445,7 @@ a:hover                        { text-decoration:none; }
         line-height: 44px;
     }
 
-    .content-advertisings {
+    .content-with-sidebar {
         overflow: hidden;
         padding-left: 15px;
     }
