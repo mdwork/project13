@@ -57,11 +57,9 @@ p {
         display: block;
         width: 100%;
         height: 283px;
-        margin-bottom: -283px;
     }
     .wrapper-contact-page:after {
-        min-height: 363px;
-        margin-bottom: -363px;
+        height: 363px;
     }
 .content {
     position: relative;
@@ -731,7 +729,7 @@ p {
                 .menu-page-list li {
                     margin-bottom: 5px;
                     list-style-type: disc;
-                    text-indent: -8px;
+                    text-indent: -6px;
                 }
                     .menu-page-list li a {
                         font-size: 14px;
@@ -925,11 +923,13 @@ p {
 .wrap-footer {
     min-width: 1000px;
     height: 283px;
+    margin-top: -283px;
     background: url("../images/footer/bg_footer.jpg") center no-repeat;
 }
 .wrap-footer-contact-page {
     min-width: 1000px;
     height: 363px;
+    margin-top: -363px;
     background: url("../images/footer/contact_bg_footer.jpg") center no-repeat;
 }
     .wrap-footer-contact-page .content {
