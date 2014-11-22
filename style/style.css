@@ -44,6 +44,9 @@ p {
     font-size: 13px;
     color: #2b2b2b;
 }
+main {
+    display: block;
+}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------WRAPPER--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -294,7 +297,7 @@ p {
             font-size: 16px;
             color: #fff;
             border: none;
-            background: url("../images/content/bg_btn.png") no-repeat right;
+            background: url("../images/content/bg_btn.png") no-repeat left;
             background-size: 100% 100%;
             cursor: pointer;
         }
@@ -351,7 +354,7 @@ p {
                 margin-left: 15px;
             }
             .wrap-ads-full-width .list-ads li {
-                margin-left: 40px;
+                margin-left: 47px;
             }
             .list-ads li:first-child {
                 margin-left: 3px;
@@ -461,7 +464,8 @@ p {
                     font-size: 13px;
                 }
     .wrap-list-gallery {
-        width: 765px;
+        overflow: hidden;
+        width: 785px;
     }
         .list-gallery {
             width: 820px;
@@ -885,6 +889,7 @@ p {
             }
                 .list-private-ads li a {
                     display: block;
+                    text-decoration: none;
                 }
                     .list-private-ads li img {
                         display: block;
