@@ -47,15 +47,21 @@ p {
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------WRAPPER--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-.wrapper {
+.wrapper,
+.wrapper-contact-page {
     min-height: 100%;
 }
-    .wrapper:after {
+    .wrapper:after,
+    .wrapper-contact-page:after {
         content: '';
         display: block;
         width: 100%;
         height: 283px;
         margin-bottom: -283px;
+    }
+    .wrapper-contact-page:after {
+        min-height: 363px;
+        margin-bottom: -363px;
     }
 .content {
     position: relative;
@@ -472,7 +478,7 @@ p {
 .wrap-content {
     position: relative;
     overflow: hidden;
-    width: 980px;
+    width: 1000px;
     margin: 0 auto;
 }
     .wrap-content h1 {
@@ -903,13 +909,32 @@ p {
                         -moz-border-radius: 3px;
                         border-radius: 3px;
                     }
+        .contact-img {
+            float: left;
+        }
+    .bottom-text {
+        position: absolute;
+        top: -30px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #1385c7;
+    }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 .wrap-footer {
-    min-height: 283px;
+    min-width: 1000px;
+    height: 283px;
     background: url("../images/footer/bg_footer.jpg") center no-repeat;
 }
+.wrap-footer-contact-page {
+    min-width: 1000px;
+    height: 363px;
+    background: url("../images/footer/contact_bg_footer.jpg") center no-repeat;
+}
+    .wrap-footer-contact-page .content {
+        height: 363px;
+    }
     .wrap-form-footer {
         position: relative;
         float: left;
@@ -917,6 +942,15 @@ p {
         height: 218px;
         padding: 5px 10px;
         margin-top: 20px;
+
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+    }
+    .form-page {
+        float: right;
+        margin: 0 0 40px;
+        background: #1385C7;
     }
         .wrap-form-footer .overview {
             position: absolute;
@@ -990,6 +1024,15 @@ p {
         .box-contact-footer .header-section {
             padding: 0;
         }
+    .description-footer {
+        position: absolute;
+        bottom: 25px;
+        display: inline-block;
+        width: 650px;
+        font-size: 22px;
+        font-weight: 600;
+        color: #fff;
+    }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------POPUPS---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
